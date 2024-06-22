@@ -41,6 +41,13 @@ combined_text = ' '.join(category_df['isi'])
 
 
 st.subheader(f'Word Cloud untuk Kategori: {selected_category}')
+# Menampilkan head dari dataframe
+st.write("Head of the DataFrame:")
+st.write(df.head())
+
+# Menampilkan tail dari dataframe
+st.write("Tail of the DataFrame:")
+st.write(df.tail())
 generate_wordcloud(combined_text)
 
 
